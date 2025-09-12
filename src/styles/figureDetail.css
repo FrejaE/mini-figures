@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  align-items: center;
+  padding: 20px;
+  margin: 40px;
+  background-color: whitesmoke;
+
+  img {
+    max-width: auto;
+    height: 300px;
+  }
+}
+.buttons {
+  display: flex;
+}

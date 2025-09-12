@@ -1,0 +1,18 @@
+.displayFigures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  img {
+    height: 80px;
+  }
+}
