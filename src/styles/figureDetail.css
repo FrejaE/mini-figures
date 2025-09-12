@@ -15,4 +15,13 @@
 }
 .buttons {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 650px) {
+  .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 }

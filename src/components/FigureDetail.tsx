@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import { IFigure } from "../models/IFigures";
-import { Rating } from "@mui/material";
+import { Button, Rating } from "@mui/material";
 import { VoteModal } from "./VoteModal";
 import "../styles/figureDetail.css";
 
@@ -37,8 +37,14 @@ export const FigureDetail = ({
 
       <p> {clickedFig.description} </p>
       <div className="buttons">
-        <button onClick={() => setClickedFig(null)}> Back </button>
-        <button onClick={() => setOpen(true)}> Vote </button>
+        <Button variant="contained" onClick={() => setClickedFig(null)}>
+          {" "}
+          Back{" "}
+        </Button>
+        <Button variant="contained" onClick={() => setOpen(true)}>
+          {" "}
+          Vote{" "}
+        </Button>
       </div>
       <VoteModal
         open={open}
